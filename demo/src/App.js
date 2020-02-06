@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-import Former from "../../src/former";
+import Former from "./former";
 
 export default function App() {
   return (
@@ -17,7 +17,7 @@ export default function App() {
           console.log(values);
           setTimeout(() => {
             setSubmitting(false);
-          }, 400);
+          }, 1000);
         }}
         validate={values => {
           const errors = {};
